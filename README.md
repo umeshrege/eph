@@ -3,12 +3,13 @@ Flume based imap email push to HDFS.
 
 # How to use?
 ## Update EmailSearcherR.java file
-1. Search and replace "<EMAIL_ID>" with your email address
-2. Search and replace "<PASSWORD_FOR_EMAIL>" with your email password
-3. Search and replace "<FOLDER_NAME>" with your gmail label
+1. Search and replace "EMAIL_ID" with your email address
+2. Search and replace "PASSWORD_FOR_EMAIL" with your email password
+3. Search and replace "FOLDER_NAME" with your gmail label
 
 **Note1**: This has been tested only with gmail as of this release. And configurations also reflect the same.
-**Note2**: Default this will pull emails from given Folder/label for previous day only. If you need emails from more number of days change the value of variable _t_ with that integer.
+
+**Note2**: Default this will pull emails from given Folder/label for previous day only. If you need emails from more number of days change the value of variable **t** with that integer.
 
 ## Create jar file
 1. Make sure you have downloaded JavaMail API and related packages 

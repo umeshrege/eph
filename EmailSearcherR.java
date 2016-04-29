@@ -91,7 +91,7 @@ public class EmailSearcherR {
             store.connect(userName, password);
  
             // opens the inbox folder
-            Folder folderInbox = store.getFolder("<FOLDER_NAME>");
+            Folder folderInbox = store.getFolder("FOLDER_NAME");
             folderInbox.open(Folder.READ_ONLY);
  
             // creates a search criterion
@@ -178,8 +178,8 @@ System.out.println(dtp + ";" + n + ";" + message.getReceivedDate() + ";" + messa
        //System.out.println("Starting :" + s1date.toString());
         String host = "imap.gmail.com";
         String port = "993";
-        String userName = "<EMAIL_ID>";
-        String password = "<PASSWORD_FOR_EMAIL>";
+        String userName = "EMAIL_ID";
+        String password = "PASSWORD_FOR_EMAIL";
         EmailSearcherR searcher = new EmailSearcherR();
         String keyword = "";
         searcher.searchEmail(host, port, userName, password, keyword);
