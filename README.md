@@ -21,6 +21,8 @@ Flume based imap email push to HDFS.
 1. Update **"a1.sources.r1.command"** parameter with complete path to EmailSearcherR.jar
 2. Update **"a1.sinks.k1.hdfs.path"** parameter with path on your hadoop HDFS where files will be stored
 
-
+## Start flume agent
+/path/to/bin/flume-ng agent -c /path/to/flume/conf -f /path/to/flume.conf -n agent
 
 ##You are good to Go!!!##
+

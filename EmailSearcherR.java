@@ -157,11 +157,6 @@ System.out.println(dtp + ";" + n + ";" + message.getReceivedDate() + ";" + messa
             System.out.println("Could not connect to the message store.");
             ex.printStackTrace();
         }
-            //System.out.println("#############################################################");
-		Runtime rs =  Runtime.getRuntime();
-      	//	System.out.println("Free memory in JVM before Garbage Collection = "+rs.freeMemory());
-     		rs.gc();
-      	//	System.out.println("Free memory in JVM after Garbage Collection = "+rs.freeMemory());
 			try {
                 		//System.out.println("Sleeping for < a minute after round " + k + " of " + t);
                          	Thread.sleep(2000);
@@ -176,7 +171,7 @@ System.out.println(dtp + ";" + n + ";" + message.getReceivedDate() + ";" + messa
     public static void main(String[] args) throws MessagingException, IOException, Exception {
 	Date s1date = new Date();
        //System.out.println("Starting :" + s1date.toString());
-        String host = "imap.gmail.com";
+        String host = "imap.gmail.com";		// gmail related config //
         String port = "993";
         String userName = "EMAIL_ID";
         String password = "PASSWORD_FOR_EMAIL";
